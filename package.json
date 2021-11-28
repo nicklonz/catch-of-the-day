@@ -4,12 +4,13 @@
   "private": true,
   "devDependencies": {
     "concurrently": "6.4.0",
-    "react-scripts": "^0.9.5"
+    "react-scripts": "^4.0.3"
   },
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "firebase": "8.10.0",
     "prop-types": "15.7.2",
+    "quick-local-ip": "^1.0.7",
     "re-base": "4.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
